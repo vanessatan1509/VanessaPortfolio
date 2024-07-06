@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON WEBSITE-->
+    <link rel="icon" href="image/logoV.png" type="image/png">
+
+    <title>Vanessa's Portfolio</title>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class="header">
+        <img src="image/logovanessa.png" class="logo">
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION DESIGN -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, It's Me</h3>
+            <h1><span>Vanessa</span></h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I specialize in transforming complex data into actionable insights through data visualization, predictive analytics, and custom reporting. 
+                Let's unlock the full potential of your data to drive informed decisions and business growth.
+            </p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="image/profilevanessa.png" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION DESIGN -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/aboutprofile.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
+            <p>A data enthusiast blending computer science expertise with analytical skills honed in accounting. 
+                Through projects in Python and SQL, I specialize in data analysis and visualization, 
+                transforming complex information into actionable insights.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Data</span><br>tableau sql</li>
+                    <li><span>analyst</span><br>tableau sql</li>
+                    <li><span>analyst</span><br>tableau sql</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>analyt</span><br>tableau sql</li>
+                    <li><span>analyst</span><br>tableau sql</li>
+                    <li><span>analyst</span><br>tableau sql</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>analyst</span><br>tableau sql</li>
+                    <li><span>analyt</span><br>tableau sql</li>
+                    <li><span>analyst</span><br>tableau sql</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION DESIGN -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga unde itaque voluptatum delectus magnam vero ducimus est voluptatem earum consequuntur exercitationem quis excepturi, tenetur fugit aliquam id laboriosam. Odio!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga unde itaque voluptatum delectus magnam vero ducimus est voluptatem earum consequuntur exercitationem quis excepturi, tenetur fugit aliquam id laboriosam. Odio!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>Android Developer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga unde itaque voluptatum delectus magnam vero ducimus est voluptatem earum consequuntur exercitationem quis excepturi, tenetur fugit aliquam id laboriosam. Odio!</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION DESIGN -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span> Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="image/1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="image/6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>lorem ipsum dolor sit, amet consfjasf afajff aff</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION DESIGN -->
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="Number" placeholder="Mobile Number" required>
+                <input type="text" name="Address" placeholder="Address" required>
+            </div>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <span id="msg"></span>
+    </section>
+
+    <!-- GOOGLE MAPS MY LOCATION -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9967086.672798883!2d95.35714413789365!3d-1.1480496315228324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f1b9f23c4c9%3A0xa8b7b21d4d5e30a2!2sMedan%2C%20North%20Sumatra%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1624468477854!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Vanessa | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCROLL REVEAL JAVASCRIPT -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="main.js"></script>
+</body>
+</html>
