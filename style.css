@@ -171,7 +171,7 @@ span {
 }
 
 .about-img img {
-    width: 35vw;
+    width: 40vw;
 }
 
 .heading {
@@ -547,7 +547,7 @@ span {
     }
 
     .about-content {
-        text-align: left;
+        text-align: center;
     }
 
     /* Tabs stack vertically on smaller screens */
@@ -592,8 +592,8 @@ span {
 
     .about-img img {
         width: 80vw;
-        max-width: 12.5rem;
-        margin-top: 4rem;
+        max-width: 100%;
+        margin-top: 2rem;
     }
 }
 
