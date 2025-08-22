@@ -157,7 +157,6 @@ span {
 }
 
 .about {
-    gap: 2rem 0;
     text-align: center;
     background: var(--snd-bg-color);
 }
