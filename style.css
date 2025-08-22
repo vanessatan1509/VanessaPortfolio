@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
 }
@@ -16,6 +15,7 @@
     --snd-bg-color: #5e2235;
     --text-color: #fff;
     --main-color: #f091ad;
+    --active-color: #ffd1dc;
 }
 
 html {
@@ -29,8 +29,13 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 7rem 8% 2rem;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 0.2rem dashed var(--main-color);
+    outline-offset: 0.3rem;
 }
 
 .header {
@@ -147,7 +152,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
-    letter-spacing: 0.1 rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
 }
@@ -402,7 +407,6 @@ span {
     margin-top: -2rem;
     font-size: 1.4rem;
     display: block;
-    align-items: center;
 }
 
 .map-container {
@@ -433,7 +437,7 @@ span {
     transition: 0.5s ease;
 }
 
-.footer-iconTop a:hover {
+.footer-iconTop:hover {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
