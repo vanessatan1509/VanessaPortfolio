@@ -147,7 +147,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
-    letter-spacing: 0.1 rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     transition: 0.5s ease;
 }
