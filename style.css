@@ -181,12 +181,12 @@ span {
 
 .about-content {
     text-align: left;
-    max-width: 37.5rem;
+    max-width: 40rem;
 }
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 0.5rem;
+    margin: 0.5rem 0 0.5rem;
 }
 
 .tab-titles {
@@ -531,13 +531,18 @@ span {
         margin-top: 4rem;
     }
 
-    .about {
+    .about-container {
         flex-direction: column;
+        text-align: center;
     }
 
     .about-img img {
         width: 90vw;
-        margin-top: 4rem;
+        max-width: 12.5rem;
+    }
+
+    .about-content{
+        text-align: center;
     }
 
     .services h2 {
