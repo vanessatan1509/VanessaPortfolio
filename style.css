@@ -163,15 +163,17 @@ span {
 }
 
 .about-container {
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .about-img img {
-    width: 40vw;
+    width: 100%;
 }
 
 .heading {
@@ -180,7 +182,7 @@ span {
 }
 
 .about-content {
-    text-align: left;
+    text-align: center;
     max-width: 100%;
 }
 
