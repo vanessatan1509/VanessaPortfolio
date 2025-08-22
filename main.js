@@ -47,7 +47,7 @@ ScrollReveal({
     delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, heading', {origin: 'top'});
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin:'bottom'});
 ScrollReveal().reveal('.home-contact h1, .about-img', {origin:'left'});
 ScrollReveal().reveal('.home-contact p, .about-content', {origin: 'right'});
@@ -79,7 +79,7 @@ function opentab(tabname) {
 /* FORM - CONTACT ME - SUBMIT TO GOOGLE SHEET */
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz6KuU7eDhQBW7eKnvSTgjE5PwMhGO2n9BSvSgvdwLYzCjhRxs1CKsLcsoN-Pc0LQd5EA/exec'
 const form = document.forms['submit-to-google-sheet']
-const mgs = document.getElementById("msg")
+const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
     e.preventDefault()
