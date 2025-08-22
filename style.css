@@ -52,16 +52,8 @@ section {
     box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
 }
 
-header nav a.active {
-    color: var(--active-color); 
-}
-
 .logo {
     width: 10rem;
-}
-
-.navbar {
-    display: flex; 
 }
 
 .navbar a {
@@ -488,6 +480,10 @@ span {
 
 
 @media (max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
+    
     .navbar {
         position: absolute;
         top: 100%;
