@@ -1,5 +1,4 @@
 /* Toggle Icon Navbar */
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -9,7 +8,6 @@ menuIcon.onclick = () => {
 }
 
 /* Scroll Section Active Link */
-
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
@@ -87,7 +85,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-        mgs.innerHTML = "Message sent successfully"
+        msg.innerHTML = "Message sent successfully"
         setTimeout(function(){
             msg.innerHTML = ""
         },3000)
