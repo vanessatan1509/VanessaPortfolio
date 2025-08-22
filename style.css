@@ -164,7 +164,7 @@ span {
 .about-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 2rem;
     margin-top: 2rem;
 }
