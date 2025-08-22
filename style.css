@@ -448,14 +448,17 @@ span {
 }
 
 
-/*BREAKPOINT*/
 
+/* BREAKPOINTS */
+
+/* Large screens */
 @media (max-width: 1200px) {
-    html{
+    html {
         font-size: 55%;
     }
 }
 
+/* Medium devices (tablets, small laptops) */
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
@@ -466,7 +469,7 @@ span {
     }
 
     .services {
-        padding: 7rem;
+        padding: 7rem 3%;
     }
 
     .portfolio {
@@ -482,7 +485,7 @@ span {
     }
 }
 
-
+/* Tablets & large phones */
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -531,22 +534,36 @@ span {
         margin-top: 4rem;
     }
 
+    /* About section adjustments */
     .about-container {
         flex-direction: column;
         text-align: center;
     }
 
     .about-img img {
-        width: 90vw;
-        max-width: 12.5rem;
+        width: 80vw;
+        max-width: 12.5rem; /* ~200px */
+        margin-top: 2rem;
     }
 
-    .about-content{
+    .about-content {
         text-align: center;
+    }
+
+    /* Tabs stack vertically on smaller screens */
+    .tab-titles {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
     }
 
     .services h2 {
         margin-bottom: 3rem;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .portfolio h2 {
@@ -556,8 +573,13 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    html {
+        font-size: 52%; /* smoother scaling on smaller devices */
+    }
 }
 
+/* Small phones */
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
@@ -569,11 +591,13 @@ span {
     }
 
     .about-img img {
-        width: 100vw;
+        width: 80vw;
+        max-width: 12.5rem;
         margin-top: 4rem;
     }
 }
 
+/* Extra small devices */
 @media (max-width: 450px) {
     html {
         font-size: 50%;
