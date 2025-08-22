@@ -157,15 +157,17 @@ span {
 }
 
 .about {
+    gap: 2rem 0;
+    text-align: center;
+    background: var(--snd-bg-color);
+}
+
+.about-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
-}
-
-.about h2 {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .about-img img {
@@ -177,9 +179,9 @@ span {
     font-size: 4.5rem;
 }
 
-.about-content h2 {
+.about-content {
     text-align: left;
-    line-height: 1.2;
+    max-width: 37.5rem;
 }
 
 .about-content p {
