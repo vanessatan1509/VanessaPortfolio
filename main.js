@@ -31,14 +31,11 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     /* Remove Toggle Icon and Navbar */
-    let menuIcon = document.querySelector('#menu-icon'); 
-    let navbar = document.querySelector('.navbar'); 
     if (menuIcon && navbar) {
         menuIcon.classList.remove('fa-xmark');
         navbar.classList.remove('active');
     }
 };
-
 
 /* Scroll Reveal */
 ScrollReveal({
@@ -65,11 +62,11 @@ const typed = new Typed('.multiple-text', {
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-    for(tablink of tablinks) {
+function opentab(tabname, event) {
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for(tabcontent of tabcontents) {
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
