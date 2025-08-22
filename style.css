@@ -29,7 +29,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 7rem 8% 2rem;
 }
 
@@ -401,7 +401,6 @@ span {
     color: #7eea6b;
     margin-top: -2rem;
     font-size: 1.4rem;
-    display: block;
     align-items: center;
 }
 
