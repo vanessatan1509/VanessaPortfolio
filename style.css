@@ -15,7 +15,6 @@
     --snd-bg-color: #5e2235;
     --text-color: #fff;
     --main-color: #f091ad;
-    --active-color: #ffd1dc;
 }
 
 html {
@@ -29,7 +28,7 @@ body {
 }
 
 section {
-    min-height: 100svh;
+    min-height: 100vh;
     padding: 7rem 8% 2rem;
 }
 
@@ -48,17 +47,10 @@ section {
 
 .header.sticky {
     border-bottom: 0.1rem solid rgba(0,0,0,0.2);
-    background: var(--bg-color);
-    box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
 }
 
 .logo {
     width: 10rem;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
 }
 
 .navbar a {
@@ -154,7 +146,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1 rem;
     font-weight: 600;
     transition: 0.5s ease;
 }
@@ -409,6 +401,7 @@ span {
     margin-top: -2rem;
     font-size: 1.4rem;
     display: block;
+    align-items: center;
 }
 
 .map-container {
@@ -439,7 +432,7 @@ span {
     transition: 0.5s ease;
 }
 
-.footer-iconTop:hover {
+.footer-iconTop a:hover {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -485,7 +478,7 @@ span {
 
 
 @media (max-width: 768px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
     
@@ -499,7 +492,6 @@ span {
         border-top: 0.1rem solid rgba(0,0,0,0.2);
         box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
         display: none;
-        flex-direction: column;
     }
 
     .navbar.active {
