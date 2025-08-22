@@ -33,11 +33,6 @@ section {
     padding: 7rem 8% 2rem;
 }
 
-a:focus-visible, button:focus-visible {
-    outline: 0.2rem dashed var(--main-color);
-    outline-offset: 0.3rem;
-}
-
 .header {
     position: fixed;
     top: 0;
