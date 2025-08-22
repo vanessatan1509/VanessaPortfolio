@@ -163,7 +163,6 @@ span {
 }
 
 .about-container {
-    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,13 +542,14 @@ span {
     }
 
     .about-img img {
-        width: 80vw;
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
         margin-top: 2rem;
     }
 
     .about-content {
         text-align: center;
+        width: 100%;
     }
 
     /* Tabs stack vertically on smaller screens */
