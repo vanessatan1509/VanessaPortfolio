@@ -53,10 +53,24 @@ a:focus-visible, button:focus-visible {
 
 .header.sticky {
     border-bottom: 0.1rem solid rgba(0,0,0,0.2);
+    background: var(--bg-color);
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.2);
+}
+
+header nav a.active {
+    color: var(--main-color); 
 }
 
 .logo {
     width: 10rem;
+}
+
+.navbar {
+    display: none; 
+}
+
+.navbar.active {
+    display: block; 
 }
 
 .navbar a {
